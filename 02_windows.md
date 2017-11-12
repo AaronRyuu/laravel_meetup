@@ -1,3 +1,8 @@
+---
+layout: default
+title: 开发环境Windows篇
+---
+
 用`windows`的同学们有福了，你无需任何繁琐的配置都可以很方便的开发`laravel`，这就是`laragon`。用`laragon`做起`laravel`开发，真的无比方面好用。
 
 它里面自带`composer`，`php`，`mysql`，`redis` `memcached`，还包含有`cmder`这个非常好用的命令行。

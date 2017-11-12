@@ -1,3 +1,8 @@
+---
+layout: default
+title: Until Next Time, Goodbye!
+---
+
 ## recap 一下
 
 回顾一下 `超简单的laravel新手入门教程`，到底都做了哪些内容。你和我一起实现了一个真正的`Web App`，虽然局部的功能还是可以进一步增强。

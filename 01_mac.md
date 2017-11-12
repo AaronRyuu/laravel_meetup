@@ -1,3 +1,8 @@
+---
+layout: default
+title: 开发环境Mac篇
+---
+
 使用`mac`做开发，有一些`app`几乎做任何程序开发都是必备品。
 
 ## xcode

@@ -1,3 +1,8 @@
+---
+layout: default
+title: 简介
+---
+
 hi，我是 东哥。本套课程叫做`《超简单的laravel新手入门教程》`，我来和你分享用 `laravel` 打造一个 `web` 应用程序的过程。
 
 ## 什么是 laravel
