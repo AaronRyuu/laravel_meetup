@@ -1,6 +1,5 @@
 body {
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #7EB6AD;
+  font-family: "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
   color: #222;
 }
 #wrapper {
@@ -16,7 +15,7 @@ body {
 #header {
   font-family: Courier;
   text-align: left;
-  background: #222;
+  background: #7EB6AD;
   -moz-border-radius-topleft: 1em;
   -webkit-border-top-left-radius: 1em;
   -moz-border-radius-topright: 1em;
