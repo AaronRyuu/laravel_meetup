@@ -53,7 +53,6 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        4 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -94,7 +93,6 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        5 min
       </td>
     </tr>
     <tr class="episode-wrap">
