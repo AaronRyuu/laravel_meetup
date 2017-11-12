@@ -7,7 +7,7 @@ hi，我是`东哥`。本套课程叫做`《超简单的laravel新手入门教�
 
 ## 什么是 laravel
 
-`The PHP Framework For Web Artisans`，laravel 是适合艺术家来使用的`web`框架，一切东西都要尽可能的完美。laravel 特别适合我这种代码洁癖的人使用。
+`The PHP Framework For Web Artisans`，laravel 是适合`艺术家`来使用的 web 框架，一切东西都要尽可能的完美。laravel 特别适合我这种代码洁癖的人使用。
 
 
 laravel 是目前世界上`最流行`的 php开发框架。
