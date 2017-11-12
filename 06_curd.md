@@ -3,7 +3,6 @@ layout: default
 title: 瞄准一个东东来 CURD
 ---
 
-{% raw % }
 现在有了 `issue` 也就是活动信息这个东东，后面就开始对他 `Create` `Update` `Read` `Delete` 了。
 
 这一集只是开始，瞄准 `issue`的展示和删除 。 关于 `CURD` 比较详细的解释，参考 https://laravel.com/docs/5.5/eloquent#inserting-and-updating-models
@@ -187,5 +186,3 @@ public function destroy($id)
     return redirect('/');
 }
 ```
-
-{% endraw % }

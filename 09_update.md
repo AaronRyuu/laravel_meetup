@@ -3,8 +3,6 @@ layout: default
 title: 更新一个资源
 ---
 
-{% raw % }
-
 现在活动的`读取`、`删除`、`添加`都已经完成了。
 这一集我们来实现`CURD`里面，最后的`update`。
 
@@ -109,6 +107,3 @@ public function update(Request $request, $id)
 ```
 
 提交一下试试，活动已经可以修改了。不错不错，`CURD`的所有功能都已经完美实现。
-
-{% endraw % }
-
