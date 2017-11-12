@@ -12,7 +12,7 @@ title: 网站的耳朵
 首页的 `发布新活动` 的按钮，链接改为
 
 ```html
-<a href="{{route('issues.create')}}" ...>发布新活动</a>
+{% raw %}<a href="{{route('issues.create')}}" ...>发布新活动</a>{% endraw %}
 ```
 
 web.php路由 中添加
@@ -53,7 +53,7 @@ public function create(){
             <hr>
         </div>
 
-        <form class="am-form" action="{{route('issues.store')}}" method="post">
+        <form class="am-form" action="{% raw %}{{route('issues.store')}}{% endraw %}" method="post">
             <fieldset>
                 <div class="am-form-group">
                     <label>标题</label>
@@ -86,7 +86,7 @@ Route::post('issues', 'IssuesController@store')->name('issues.store');
 
 ## 接受数据
 
-这样，就要在 IssuesController.php 中添加
+这样，就要在 `IssuesController.php` 中添加
 
 ```php
 public function store(Request $request)
@@ -104,7 +104,7 @@ https://laravel.com/docs/5.5/csrf
 
 ```html
 <form>
-{{csrf_field()}}
+	{% raw %}{{csrf_field()}}{% endraw %}
 ...
 </form
 ```

@@ -47,7 +47,7 @@ php artisan route:list
 在`welcome/_issue_list.blade.php`与`issues/index.blade.php`中，找到`3 days ago`，用下面的代码代替：
 
 ```php
-{{$issue->created_at->diffForHumans()}}
+{% raw %}{{$issue->created_at->diffForHumans()}}{% endraw %}
 ```
 
 

@@ -18,7 +18,7 @@ title: 天啊，一大堆issues
 `layouts/app.blade.php`布局模板中，修改`活动`的链接地址
 
 ```html
-<a href="{{route('issues.index')}}">活动</a>
+{% raw %}<a href="{{route('issues.index')}}">活动</a>{% endraw %}
 ```
 
 ## route
@@ -49,6 +49,7 @@ public function index()
 4. `foreach`循环`li`标签，显示正确的活动信息。
 
 ```html
+{% raw %}
  @foreach($issues as $issue)
     <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
         <div class="am-u-sm-2 am-u-md-1 am-list-thumb">
@@ -74,6 +75,7 @@ public function index()
         </div>
     </li>
 @endforeach
+{% endraw %}
 ```
 
 ## 分页
@@ -90,7 +92,7 @@ public function index()
 $issues = Issue::orderBy('created_at', 'desc')->paginate(5);
 ```
 
-2.`issues/index.blade.php`中，用`{{ $issues->links() }}`，代替之前写死的分页代码。
+2.`issues/index.blade.php`中，用`{% raw %}{{ $issues->links() }}{% endraw %}`，代替之前写死的分页代码。
 
 
 ![](media/15099716345098.jpg)

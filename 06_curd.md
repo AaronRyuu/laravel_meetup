@@ -70,7 +70,7 @@ Route::get('issues/{issue}', 'IssuesController@show');
 到 `_issue_list.blade.php` 中添加指向 IssuesController@show 页面的链接
 
 ```html
-<a href="/issues/{{$issue->id}}">{{$issue->title}}</a>
+{% raw %}<a href="/issues/{{$issue->id}}">{{$issue->title}}</a>{% endraw %}
 ```
 
 访问一下，屏幕提示`IssuesController does not exist`，相信你一看到这个提示，就应该知道下面我们应该做什么了。
@@ -119,21 +119,21 @@ public function show($id)
 ```html
 <!-- 标题 -->
  <div class="issue-heading">
-    ...
-    {{$issue->title}}
+    ...	
+    {% raw %}{{$issue->title}}{% endraw %}
     ...
 </div>
 
 <!-- 内容 -->
-<div class="am-comment-bd">{{$issue->content}}</div>
+{% raw %}<div class="am-comment-bd">{{$issue->content}}</div>{% endraw %}
 ```
 
 ### 使用命名路由
 
-但是再来稍微优化一些代码。到 `_issue_list.blade.php`，修改`/issues/{{$issue->id}}`为
+但是再来稍微优化一些代码。到 `_issue_list.blade.php`，修改`{% raw %}/issues/{{$issue->id}}{% endraw %}`为
 
 ```php
-{{route('issues.show', $issue->id)}}
+{% raw %}{{route('issues.show', $issue->id)}}{% endraw %}
 ```
 
 这样当然会报错，这是`laravel` 提供了给路由起名字的机制，叫 `named route`，需要做的就是到 web.php 中
@@ -149,7 +149,7 @@ Route::get('issues/{issue}', 'IssuesController@show')->name('issues.show');
 现在就来看如果删除一个资源。还是从 `view` 中的链接开始写。在 `issues/show.blade.php` 中添加删除的链接地址。
 
 ```html
-<a href="{{route('issues.destroy', $issue->id)}}" ...>Destroy</a>
+{% raw %}<a href="{{route('issues.destroy', $issue->id)}}" ...>Destroy</a>{% endraw %}
 ```
 
 对应的 web.php路由 中要添加
@@ -174,7 +174,9 @@ Route::delete('issues/{issue}', 'IssuesController@destroy')->name('issues.destro
 将删除链接修改为
 
 ```html
+{% raw %}
 <a href="{{route('issues.destroy', $issue->id)}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Are you sure?" ...>Destroy</a>
+{% endraw %}
 ```
 
 再到 `IssuesController.php`中 添加删除相关的代码

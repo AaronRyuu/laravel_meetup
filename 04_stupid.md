@@ -30,7 +30,7 @@ public function index()
 @foreach($issues as $issue)
     <li class="...">
         ...
-        <a href="issues_show.html">{{$issue['title']}}</a>
+        {% raw %}<a href="issues_show.html">{{$issue['title']}}</a>{% endraw %}
         ...
     </li>
 @endforeach

@@ -51,11 +51,13 @@ php artisan migrate
 4. 修改`form`。加上`action`、`csrf_feild()`
 
 ```html
+{% raw %}
 <form class="am-form" method="post" action="{{route('comments.store')}}">
     {{csrf_field()}}
     <input type="hidden" name="issue_id" value="{{$issue->id}}">
     ...
 </form>
+{% endraw %}
 ```
 >Tips: 因为`comments`表中，有一个`issue_id`。这里就需要放一个隐藏的`input`，将当前`issue`的`id`传递过去。
 
@@ -192,6 +194,7 @@ public function show($id)
 `shared/_comment_list.blade.php`中，加上`foreach`
 
 ```php
+{% raw %}
 @foreach($comments as $comment)
     <li class="am-comment">
         <img src="/assets/img/avatar2.png" alt="" class="am-comment-avatar" width="48" height="48">
@@ -207,6 +210,7 @@ public function show($id)
         </div>
     </li>
 @endforeach
+{% endraw %}
 ```
 
 不错，之前发布的评论已经正确的显示出来了。
@@ -228,7 +232,7 @@ public function avatar()
 这样到 `views/shared/_comment_list.blade.php` 中，
 
 ```html
-<img src="{{$comment->avatar()}}" ...>
+{% raw %}<img src="{{$comment->avatar()}}" ...>{% endraw %}
 ```
 
 这样就可以正确显示头像了。

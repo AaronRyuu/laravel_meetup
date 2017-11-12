@@ -186,6 +186,6 @@ class WelcomeController extends Controller
 再到 `_issue_list.blade.php` 中在稍作修改就好了。
 
 ```php
-{{$issue->title}}
+{% raw %}{{$issue->title}}{% endraw %}
 ```
 
