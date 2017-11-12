@@ -1,3 +1,5 @@
+{% raw % }
+
 现在活动的`读取`、`删除`、`添加`都已经完成了。
 这一集我们来实现`CURD`里面，最后的`update`。
 
@@ -66,19 +68,19 @@ Route::put('issues/{issue}', 'IssuesController@update')->name('issues.update');
             <hr>
         </div>
 
-        <form class="am-form" action="`{{route('issues.update', $issue->id)}}`" method="post">
-            `{{csrf_field()}}`
-            `{{ method_field('PUT') }}`
+        <form class="am-form" action="{{route('issues.update', $issue->id)}}" method="post">
+            {{ csrf_field() }}
+            {{ method_field('PUT') }}
             
             <fieldset>
                 <div class="am-form-group">
                     <label>标题</label>
-                    <input type="text" placeholder="输入活动标题" name="title" value="`{{$issue->title}}`">
+                    <input type="text" placeholder="输入活动标题" name="title" value="{{$issue->title}}">
                 </div>
 
                 <div class="am-form-group">
                     <label>内容</label>
-                    <textarea rows="5" name="content">`{{$issue->content}}`</textarea>
+                    <textarea rows="5" name="content">{{$issue->content}}</textarea>
                 </div>
 
                 <button type="submit" class="am-btn am-btn-default">提交</button>
@@ -103,4 +105,5 @@ public function update(Request $request, $id)
 
 提交一下试试，活动已经可以修改了。不错不错，`CURD`的所有功能都已经完美的实现了。
 
+{% endraw % }
 
