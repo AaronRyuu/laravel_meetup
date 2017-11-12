@@ -3,10 +3,10 @@ layout: default
 title: 开发环境Mac篇
 ---
 
-使用`mac`做开发，有一些`app`几乎做任何程序开发都是必备品。
+使用 mac 做开发，有一些 app 几乎做任何程序开发都是`必备品`。
 
 ## xcode
-mac中有太多开发相关的程序，都依赖于`xcode`。所以无论你做不做`iso`开发，基本都是必须安装的。安装也非常简单，直接在`app store`中下载就好了。需要注意的是，当安装完成之后，一定记得要启动一次，并点击同意按钮。
+mac中有太多开发相关的程序，都依赖于`xcode`。所以无论你做不做`ios`开发，基本都是必须安装的。安装也非常简单，直接在`app store`中下载就好了。需要注意的是，当安装完成之后，一定记得要启动一次，并点击同意按钮。
 
 
 ## oh my zsh
@@ -69,14 +69,14 @@ which php
 
 ## 安装composer
 
-`composer`是`php`的包管理器，也是类似`homebrew`的功能，不同的是`composer`是专门用来安装`php`包的。在开发`php`程序时，想安装什么，都是一条`composer require`，就可以自动下载好你想要的包了。
+`composer`是 php 的包管理器，也是类似`homebrew`的功能，不同的是`composer`是专门用来安装 php 包的。在开发 php 程序时，想安装什么，都是一条`composer require`，就可以自动下载好你想要的包了。
 
 ```php
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 ```
 
-`composer`默认的仓库在国外，用起来非常的慢。那么就修改为使用中国镜像，这样下载包的时候速度就会很快了。
+composer 默认的仓库在`国外`，用起来非常的慢。那么就修改为使用`中国镜像`，这样下载包的时候速度就会很快了。
 
 ```php
 composer config -g repo.packagist composer https://packagist.phpcomposer.com
@@ -96,12 +96,12 @@ brew install mysql
 brew services start mysql
 ```
 
->Tips: `mysql`默认的账号是`root`，密码是空。
+>Tips: mysql默认的账号是`root`，密码是`空`。
 
 
 ## 跑起一个`laravel`项目来
 
-先使用composer安装 laravel安装器
+先使用composer安装 `laravel安装器`
 
 ```php
 composer global require "laravel/installer"
@@ -122,7 +122,7 @@ mkdir -p  ~/Developer/PHP
 cd ~/Developer/PHP
 ```
 
-再来建一个`laravel`项目，并启动服务。
+再来建一个`laravel项目`，并启动服务。
 
 ```php
 laravel new meetup
@@ -136,6 +136,6 @@ php artisan serve
 http://localhost:8000
 ```
 
-great，一个`laravel`项目已经成功跑起来了。
+great，一个laravel项目已经成功跑起来了。
 
 
