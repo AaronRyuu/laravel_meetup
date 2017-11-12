@@ -3,6 +3,8 @@ layout: default
 title: 网站的耳朵
 ---
 
+{% raw %}
+
 当代的网站不仅能够向访问者展示新型，也能去倾听访问者的声音。这个主要是通过 `form` 实现的。
 
 ![](media/15099754937434.jpg)
@@ -12,7 +14,7 @@ title: 网站的耳朵
 首页的 `发布新活动` 的按钮，链接改为
 
 ```html
-{% raw %}<a href="{{route('issues.create')}}" ...>发布新活动</a>{% endraw %}
+<a href="{{route('issues.create')}}" ...>发布新活动</a>
 ```
 
 web.php路由 中添加
@@ -53,7 +55,7 @@ public function create(){
             <hr>
         </div>
 
-        <form class="am-form" action="{% raw %}{{route('issues.store')}}{% endraw %}" method="post">
+        <form class="am-form" action="{{route('issues.store')}}" method="post">
             <fieldset>
                 <div class="am-form-group">
                     <label>标题</label>
@@ -104,7 +106,7 @@ https://laravel.com/docs/5.5/csrf
 
 ```html
 <form>
-	{% raw %}{{csrf_field()}}{% endraw %}
+	{{csrf_field()}}
 ...
 </form
 ```
@@ -135,6 +137,4 @@ protected $fillable = ['title', 'content'];
 
 这样再来提交，操作成功了。
 
-
-
-
+{% endraw %}

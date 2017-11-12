@@ -3,6 +3,8 @@ layout: default
 title: Code Beauty
 ---
 
+{% raw %}
+
 ## resource路由
 
 再来优化一下路由部分。每一个访问地址，都要对应一条路由，而且还要自己定义`name`，实在是非常麻烦啊。那么有没有简便点的办法呢？其实`laravel`已经帮你准备好了。
@@ -47,7 +49,8 @@ php artisan route:list
 在`welcome/_issue_list.blade.php`与`issues/index.blade.php`中，找到`3 days ago`，用下面的代码代替：
 
 ```php
-{% raw %}{{$issue->created_at->diffForHumans()}}{% endraw %}
+{{$issue->created_at->diffForHumans()}}
 ```
 
+{% endraw %}
 

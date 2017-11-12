@@ -3,6 +3,8 @@ layout: default
 title: 天啊，一大堆issues
 ---
 
+{% raw %}
+
 数据库中目前只有几个活动信息。假如不断有用户发布新的活动，但是首页只能显示最新发布的两个活动。显示太多了首页也不好看啊，这就是一个大问题了。
 这一集，我们添加一个`index`页面，用它来显示所有的活动。
 
@@ -18,7 +20,7 @@ title: 天啊，一大堆issues
 `layouts/app.blade.php`布局模板中，修改`活动`的链接地址
 
 ```html
-{% raw %}<a href="{{route('issues.index')}}">活动</a>{% endraw %}
+<a href="{{route('issues.index')}}">活动</a>
 ```
 
 ## route
@@ -49,7 +51,6 @@ public function index()
 4. `foreach`循环`li`标签，显示正确的活动信息。
 
 ```html
-{% raw %}
  @foreach($issues as $issue)
     <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
         <div class="am-u-sm-2 am-u-md-1 am-list-thumb">
@@ -75,7 +76,6 @@ public function index()
         </div>
     </li>
 @endforeach
-{% endraw %}
 ```
 
 ## 分页
@@ -92,9 +92,10 @@ public function index()
 $issues = Issue::orderBy('created_at', 'desc')->paginate(5);
 ```
 
-2.`issues/index.blade.php`中，用`{% raw %}{{ $issues->links() }}{% endraw %}`，代替之前写死的分页代码。
+2.`issues/index.blade.php`中，用`{{ $issues->links() }}`，代替之前写死的分页代码。
 
 
 ![](media/15099716345098.jpg)
 浏览一下，perfect！
 
+{% endraw %}

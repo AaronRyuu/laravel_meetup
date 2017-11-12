@@ -3,6 +3,8 @@ layout: default
 title: 瞄准一个东东来 CURD
 ---
 
+{% raw %}
+
 现在有了 `issue` 也就是活动信息这个东东，后面就开始对他 `Create` `Update` `Read` `Delete` 了。
 
 这一集只是开始，瞄准 `issue`的展示和删除 。 关于 `CURD` 比较详细的解释，参考 https://laravel.com/docs/5.5/eloquent#inserting-and-updating-models
@@ -70,7 +72,7 @@ Route::get('issues/{issue}', 'IssuesController@show');
 到 `_issue_list.blade.php` 中添加指向 IssuesController@show 页面的链接
 
 ```html
-{% raw %}<a href="/issues/{{$issue->id}}">{{$issue->title}}</a>{% endraw %}
+<a href="/issues/{{$issue->id}}">{{$issue->title}}</a>
 ```
 
 访问一下，屏幕提示`IssuesController does not exist`，相信你一看到这个提示，就应该知道下面我们应该做什么了。
@@ -120,20 +122,20 @@ public function show($id)
 <!-- 标题 -->
  <div class="issue-heading">
     ...	
-    {% raw %}{{$issue->title}}{% endraw %}
+    {{$issue->title}}
     ...
 </div>
 
 <!-- 内容 -->
-{% raw %}<div class="am-comment-bd">{{$issue->content}}</div>{% endraw %}
+<div class="am-comment-bd">{{$issue->content}}</div>
 ```
 
 ### 使用命名路由
 
-但是再来稍微优化一些代码。到 `_issue_list.blade.php`，修改`{% raw %}/issues/{{$issue->id}}{% endraw %}`为
+但是再来稍微优化一些代码。到 `_issue_list.blade.php`，修改`/issues/{{$issue->id}}`为
 
 ```php
-{% raw %}{{route('issues.show', $issue->id)}}{% endraw %}
+{{route('issues.show', $issue->id)}}
 ```
 
 这样当然会报错，这是`laravel` 提供了给路由起名字的机制，叫 `named route`，需要做的就是到 web.php 中
@@ -149,7 +151,7 @@ Route::get('issues/{issue}', 'IssuesController@show')->name('issues.show');
 现在就来看如果删除一个资源。还是从 `view` 中的链接开始写。在 `issues/show.blade.php` 中添加删除的链接地址。
 
 ```html
-{% raw %}<a href="{{route('issues.destroy', $issue->id)}}" ...>Destroy</a>{% endraw %}
+<a href="{{route('issues.destroy', $issue->id)}}" ...>Destroy</a>
 ```
 
 对应的 web.php路由 中要添加
@@ -174,9 +176,7 @@ Route::delete('issues/{issue}', 'IssuesController@destroy')->name('issues.destro
 将删除链接修改为
 
 ```html
-{% raw %}
 <a href="{{route('issues.destroy', $issue->id)}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Are you sure?" ...>Destroy</a>
-{% endraw %}
 ```
 
 再到 `IssuesController.php`中 添加删除相关的代码
@@ -188,3 +188,5 @@ public function destroy($id)
     return redirect('/');
 }
 ```
+
+{% endraw %}

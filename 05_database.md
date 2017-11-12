@@ -3,6 +3,8 @@ layout: default
 title: 数据的仓库
 ---
 
+{% raw %}
+
 前面把要展示的数据都放在了 `controller` 里。
 那么设想一下，假如现在有另一个人发布了1个新活动，那我们是不是要去修改`controller`代码，加入1条新数据。
 假如现在有人发布了100个活动，我们岂不是要去修改代码，加入100条数据？
@@ -186,6 +188,7 @@ class WelcomeController extends Controller
 再到 `_issue_list.blade.php` 中在稍作修改就好了。
 
 ```php
-{% raw %}{{$issue->title}}{% endraw %}
+{{$issue->title}}
 ```
 
+{% endraw %}

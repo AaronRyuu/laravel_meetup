@@ -3,6 +3,8 @@ layout: default
 title: 更新一个资源
 ---
 
+{% raw %}
+
 现在活动的`读取`、`删除`、`添加`都已经完成了。
 这一集我们来实现`CURD`里面，最后的`update`。
 
@@ -12,7 +14,7 @@ title: 更新一个资源
 来添加一个 `edit` 的链接，到 `views/issues/show.blade.php`中
 
 ```html
-{% raw %}<a href="{{route('issues.edit', $issue->id)}}"...>Edit</a>{% endraw %}
+<a href="{{route('issues.edit', $issue->id)}}"...>Edit</a>
 ```
 
 ## route
@@ -55,7 +57,7 @@ Route::put('issues/{issue}', 'IssuesController@update')->name('issues.update');
 ```
 
 因为这里使用了`put`动词，而`form`表单并不能发起`put`、`patch`和`delete`请求。
-`larave`的解决方式是，添加 {% raw %}`{{ method_field('PUT') }}`{% endraw %}，来伪造一个`put`请求。
+`larave`的解决方式是，添加 `{{ method_field('PUT') }}`，来伪造一个`put`请求。
 
 最终得到的页面
 
@@ -72,8 +74,8 @@ Route::put('issues/{issue}', 'IssuesController@update')->name('issues.update');
         </div>
 
         <form class="am-form" action="{{route('issues.update', $issue->id)}}" method="post">
-            {% raw %}{{ csrf_field() }}
-            {{ method_field('PUT') }}{% endraw %}
+            {{ csrf_field() }}
+            {{ method_field('PUT') }}
             
             <fieldset>
                 <div class="am-form-group">
@@ -107,3 +109,5 @@ public function update(Request $request, $id)
 ```
 
 提交一下试试，活动已经可以修改了。不错不错，`CURD`的所有功能都已经完美实现。
+
+{% endraw %}

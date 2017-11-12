@@ -23,7 +23,7 @@ https://forum.laragon.org/topic/473/download-laragon
 
 
 
-## 基础设置
+## 使用中文
 
 点右键，`preferences`，现在可以把`language`设置成`chinese`了，其他的一切都保持默认就好。
 

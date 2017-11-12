@@ -3,6 +3,8 @@ layout: default
 title: 笨办法发消息
 ---
 
+{% raw %}
+
 首页显示的两条最新活动，是我们`html模板`中写死的数据。他们与我们`php`程序一点关系都没有。
 现在我们就想办法，让这两条数据从 `controller`中发出，然后在模板中显示。
 
@@ -30,7 +32,7 @@ public function index()
 @foreach($issues as $issue)
     <li class="...">
         ...
-        {% raw %}<a href="issues_show.html">{{$issue['title']}}</a>{% endraw %}
+        <a href="issues_show.html">{{$issue['title']}}</a>
         ...
     </li>
 @endforeach
@@ -58,3 +60,4 @@ https://laravel.com/docs/5.5/blade#including-sub-views
 
 > Tips: 我个人习惯将 `子视图`文件名，加上一个`_`前缀，这个习惯也是来自于`ruby on rails`了。好处是，可以直观的把子视图和其他模板区分开。
 
+{% endraw %}
