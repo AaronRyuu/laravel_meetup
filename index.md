@@ -46,17 +46,7 @@ title: 目录
       </td>
     </tr>
     <tr class="episode-wrap">
-      <td class="episode-index">5</td>
-      <td class="episode-title">
-        <a href="05_rails_way.html">
-          The Rails Way
-        </a>
-      </td>
-      <td class="episode-length">
-      </td>
-    </tr>
-    <tr class="episode-wrap">
-      <td class="episode-index">8</td>
+      <td class="episode-index">4</td>
       <td class="episode-title">
         <a href="04_stupid.html">
           笨办法发消息
@@ -66,7 +56,7 @@ title: 目录
       </td>
     </tr>
     <tr class="episode-wrap">
-      <td class="episode-index">9</td>
+      <td class="episode-index">5</td>
       <td class="episode-title">
         <a href="05_database.html">
           数据的仓库
@@ -76,17 +66,17 @@ title: 目录
       </td>
     </tr>
     <tr class="episode-wrap">
-      <td class="episode-index">10</td>
+      <td class="episode-index">6</td>
       <td class="episode-title">
         <a href="06_curd.html">
-          瞄准一个东东来 CRUD
+          瞄准一个东东来 CURD
         </a>
       </td>
       <td class="episode-length">
       </td>
     </tr>
     <tr class="episode-wrap">
-      <td class="episode-index">11</td>
+      <td class="episode-index">7</td>
       <td class="episode-title">
         <a href="07_ear.html">
           网站的耳朵
@@ -96,7 +86,7 @@ title: 目录
       </td>
     </tr>
     <tr class="episode-wrap">
-      <td class="episode-index">6</td>
+      <td class="episode-index">8</td>
       <td class="episode-title">
         <a href="08_issues.html">
 			天啊，一大堆issues
@@ -106,7 +96,7 @@ title: 目录
       </td>
     </tr>
     <tr class="episode-wrap">
-      <td class="episode-index">7</td>
+      <td class="episode-index">9</td>
       <td class="episode-title">
         <a href="09_update.html">
 			更新一个资源
@@ -116,7 +106,7 @@ title: 目录
       </td>
     </tr>
     <tr class="episode-wrap">
-      <td class="episode-index">12</td>
+      <td class="episode-index">10</td>
       <td class="episode-title">
         <a href="10_beauty.html">
           Code Beauty
@@ -126,7 +116,7 @@ title: 目录
       </td>
     </tr>
     <tr class="episode-wrap">
-      <td class="episode-index">13</td>
+      <td class="episode-index">11</td>
       <td class="episode-title">
         <a href="11_comment.html">
           添加评论
@@ -136,7 +126,7 @@ title: 目录
       </td>
     </tr>
     <tr class="episode-wrap">
-      <td class="episode-index">14</td>
+      <td class="episode-index">12</td>
       <td class="episode-title">
         <a href="12_goodbye.html">
           Until Next Time, Goodbye!
