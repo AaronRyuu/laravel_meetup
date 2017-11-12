@@ -3,6 +3,7 @@ layout: default
 title: 添加评论
 ---
 
+{% raw %}
 一个活动发布完成后，没有用户来互动这也太单调了。这一集要做的就是来添加用户评论。
 
 在开始今天的课程之前，首先来思考一个非常简单的问题。
@@ -51,13 +52,11 @@ php artisan migrate
 4. 修改`form`。加上`action`、`csrf_feild()`
 
 ```html
-{% raw %}
 <form class="am-form" method="post" action="{{route('comments.store')}}">
     {{csrf_field()}}
     <input type="hidden" name="issue_id" value="{{$issue->id}}">
     ...
 </form>
-{% endraw %}
 ```
 >Tips: 因为`comments`表中，有一个`issue_id`。这里就需要放一个隐藏的`input`，将当前`issue`的`id`传递过去。
 
@@ -194,7 +193,6 @@ public function show($id)
 `shared/_comment_list.blade.php`中，加上`foreach`
 
 ```php
-{% raw %}
 @foreach($comments as $comment)
     <li class="am-comment">
         <img src="/assets/img/avatar2.png" alt="" class="am-comment-avatar" width="48" height="48">
@@ -210,14 +208,13 @@ public function show($id)
         </div>
     </li>
 @endforeach
-{% endraw %}
 ```
 
 不错，之前发布的评论已经正确的显示出来了。
 
 ## 用户头像
 
-目前还有一点不完美的是，所有用户的头像，都显示了Pipi的头像。
+目前还有一点不完美的是，所有用户的头像，都显示了`Pipi`的头像。
 这个地方我们使用 http://en.gravatar.com/ 的服务来解决问题。如果用户使用过`gravatar`，它是可以通过 `email`地址来取得用户的头像的。
 
 到`Comment.php`模型中
@@ -232,11 +229,11 @@ public function avatar()
 这样到 `views/shared/_comment_list.blade.php` 中，
 
 ```html
-{% raw %}<img src="{{$comment->avatar()}}" ...>{% endraw %}
+<img src="{{$comment->avatar()}}" ...>
 ```
 
 这样就可以正确显示头像了。
-
+{% endraw %}
 
 
 
