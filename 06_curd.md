@@ -1,3 +1,4 @@
+{% raw % }
 现在有了 `issue` 也就是活动信息这个东东，后面就开始对他 `Create` `Update` `Read` `Delete` 了。
 
 这一集只是开始，瞄准 `issue`的展示和删除 。 关于 `CURD` 比较详细的解释，参考 https://laravel.com/docs/5.5/eloquent#inserting-and-updating-models
@@ -59,7 +60,7 @@ $i->save()
 在`web.php中`加上
 
 ```php
-Route::get('issues/{issue}	', 'IssuesController@show');
+Route::get('issues/{issue}', 'IssuesController@show');
 ```
 
 到 `_issue_list.blade.php` 中添加指向 IssuesController@show 页面的链接
@@ -182,3 +183,4 @@ public function destroy($id)
 }
 ```
 
+{% endraw % }
