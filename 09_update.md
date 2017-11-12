@@ -50,7 +50,7 @@ Route::put('issues/{issue}', 'IssuesController@update')->name('issues.update');
 ```
 
 因为这里使用了`put`动词，而`form`表单并不能发起`put`、`patch`和`delete`请求。
-`larave`的解决方式是，添加`{{ method_field('PUT') }}`，来伪造一个`put`请求。
+`larave`的解决方式是，添加 `{{ method_field('PUT') }}` ，来伪造一个`put`请求。
 
 最终得到的页面
 
@@ -66,19 +66,19 @@ Route::put('issues/{issue}', 'IssuesController@update')->name('issues.update');
             <hr>
         </div>
 
-        <form class="am-form" action="{{route('issues.update', $issue->id)}}" method="post">
-            {{csrf_field()}}
-            {{ method_field('PUT') }}
+        <form class="am-form" action="`{{route('issues.update', $issue->id)}}`" method="post">
+            `{{csrf_field()}}`
+            `{{ method_field('PUT') }}`
             
             <fieldset>
                 <div class="am-form-group">
                     <label>标题</label>
-                    <input type="text" placeholder="输入活动标题" name="title" value="{{$issue->title}}">
+                    <input type="text" placeholder="输入活动标题" name="title" value="`{{$issue->title}}`">
                 </div>
 
                 <div class="am-form-group">
                     <label>内容</label>
-                    <textarea rows="5" name="content">{{$issue->content}}</textarea>
+                    <textarea rows="5" name="content">`{{$issue->content}}`</textarea>
                 </div>
 
                 <button type="submit" class="am-btn am-btn-default">提交</button>
