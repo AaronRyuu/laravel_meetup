@@ -9,6 +9,38 @@ code.highlighter-rouge {
 	color: #c7254e;
 }
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+}
+
+table thead tr {
+    background-color: #F8F8F8;
+}
+
+table th {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    font-weight: 700;
+}
+
+table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+table td, table th {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+		
 pre code {
   overflow: auto;
   display: block;
