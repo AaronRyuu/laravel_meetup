@@ -78,7 +78,7 @@ title: 目录
     <tr class="episode-wrap">
       <td class="episode-index">10</td>
       <td class="episode-title">
-        <a href="06_crud.html">
+        <a href="06_curd.html">
           瞄准一个东东来 CRUD
         </a>
       </td>

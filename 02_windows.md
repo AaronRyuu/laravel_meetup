@@ -18,7 +18,7 @@ https://forum.laragon.org/topic/473/download-laragon
 
 
 
-##基础设置
+## 基础设置
 
 点右键，`preferences`，现在可以把`language`设置成`chinese`了，其他的一切都保持默认就好。
 
@@ -41,7 +41,7 @@ composer config -g repo.packagist composer https://packagist.phpcomposer.com
 ```
 
 
-##开始来跑laravel项目了
+## 开始来跑laravel项目了
 
 `右键`，`快速创建`，选`laravel`，输入项目名称`meetup`。
 

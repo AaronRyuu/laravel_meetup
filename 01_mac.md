@@ -41,7 +41,7 @@ https://brew.sh/
 brew install wget
 ```
 
-##php
+## php
 
 有了上面这些工具后，再来安装一下`php`。现在我们使用的`laravel 5.5`版本，最低要求的php版本都是`7`以上，所有我们直接来安装最新的`php 7.1`好了。
 
@@ -77,7 +77,7 @@ mv composer.phar /usr/local/bin/composer
 composer config -g repo.packagist composer https://packagist.phpcomposer.com
 ```
 
-##mysql
+## mysql
 
 最后来安装一个`mysql`数据库，到后面我们再学习数据库到底是怎么玩的。
 
