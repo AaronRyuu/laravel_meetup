@@ -12,7 +12,7 @@ title: 更新一个资源
 来添加一个 `edit` 的链接，到 `views/issues/show.blade.php`中
 
 ```html
-<a href="{{route('issues.edit', $issue->id)}}"...>Edit</a>
+{% raw %}<a href="{{route('issues.edit', $issue->id)}}"...>Edit</a>{% endraw %}
 ```
 
 ## route
