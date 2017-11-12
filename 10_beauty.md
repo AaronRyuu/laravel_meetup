@@ -10,7 +10,7 @@ title: Code Beauty
 再来优化一下路由部分。每一个访问地址，都要对应一条路由，而且还要自己定义`name`，实在是非常麻烦啊。那么有没有简便点的办法呢？其实`laravel`已经帮你准备好了。
 方法就在https://laravel.com/docs/5.5/controllers#resource-controllers
 
-到 `web.php` 中，所有的指向 IssuesController.rb 的语句都删除，而用一行代替
+到 `web.php` 中，所有的指向 `IssuesController` 的语句都删除，而用一行代替
 
 ```php
 Route::resource('issues', 'IssuesController');
