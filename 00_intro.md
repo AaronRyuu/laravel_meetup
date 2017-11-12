@@ -7,15 +7,15 @@ hi，我是`东哥`。本套课程叫做`《超简单的laravel新手入门教�
 
 ## 什么是 laravel
 
-`The PHP Framework For Web Artisans`，laravel是适合艺术家来使用的`web`框架，一切东西都要尽可能的完美。laravel特别适合我这种代码洁癖的人使用。
+`The PHP Framework For Web Artisans`，laravel 是适合艺术家来使用的`web`框架，一切东西都要尽可能的完美。laravel 特别适合我这种代码洁癖的人使用。
 
 
-laravel是目前世界上最为流行的`php`开发框架。
+laravel 是目前世界上最为流行的`php`开发框架。
 
-在`google trends`上，我对比了laravel thinkphp 和yii framework，`laravel`以绝对的优势遥遥领先。
+在`google trends`上，我对比了laravel thinkphp 和yii framework，laravel 以`绝对的优势`遥遥领先。
 
 ![](media/15101145486746.jpg)
-接着我又去 github 上看了一下这三款框架他们`stars`的数量。
+接着我又去 github 上看了一下这三款框架他们 stars 的数量。
 
 ![](media/15101157877317.jpg)
 
@@ -29,7 +29,7 @@ laravel是目前世界上最为流行的`php`开发框架。
 在 thinkphp 推出的5.0版本里，甚至有大量的用法都和 laravel 一模一样。
 
 其实 laravel 本身的各种新的思想、用法，也并不是自己原创的。他们都是来自于`ruby on rails`这一款框架。
-因为`rails`在先，`laravel`在后，他们两个又有太多相似的地方了。所以说  rails 与 laravel 是一对孪生的姐弟。
+因为 rails `在先`，laravel `在后`，他们两个又有太多相似的地方了。所以说  rails 与 laravel 是一对孪生的姐弟。
 
 ![](media/15101161277809.jpg)
 
@@ -37,11 +37,11 @@ laravel是目前世界上最为流行的`php`开发框架。
 
 网络上有不少 laravel 的教程都比较过时了，教的依然还是过去`传统php开发`的那一套搞法，并不是纯正的`laravel way`。
 
-课程的主线内容，参考了peter的`rails十日谈`，我当年就是看了这一篇教程才入门了rails开发的。这一次`超简单的laravel新手入门教程`，可以算是 rails十日谈 的php版本。
+课程的主线内容，参考了peter的`rails十日谈`，我当年就是看了这一篇教程才入门了 rails 开发的。这一次`超简单的 laravel 新手入门教程`，可以算是 rails十日谈 的php版本。
 
 ## 课程适合观众
 
-学习本课程，你不一定要多会 php。有其他编程语言基础，特别是一些会面向对象编程的更好。也不需要你先掌握 css 和 js ，但是最少要懂一点 `html`。
+学习本课程，你不一定要多会 php。有其他编程语言基础，特别是一些会面向对象编程的更好。也不需要你先掌握 css 和 js ，但是`最少要懂一点` html。
 
 课程非常适合 web 开发的初学者来学习，也适合已经会用 thinkphp 或其他 php 框架的同学学习。如果你之前是使用 python 、 ruby 或者 java 、 c# 来开发 web ，现在想学习 php 开发，那本课程也是非常适合你的。
 
