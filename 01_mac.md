@@ -69,7 +69,7 @@ which php
 
 ## 安装composer
 
-`composer`是 php 的包管理器，也是类似`homebrew`的功能，不同的是`composer`是专门用来安装 php 包的。在开发 php 程序时，想安装什么，都是一条`composer require`，就可以自动下载好你想要的包了。
+`composer`是 php 的包管理器，也是类似`homebrew`的功能，不同的是 composer 是专门用来安装 php 包的。在开发 php 程序时，想安装什么，都是一条`composer require`，就可以自动下载好你想要的包了。
 
 ```php
 curl -sS https://getcomposer.org/installer | php
@@ -90,7 +90,7 @@ composer config -g repo.packagist composer https://packagist.phpcomposer.com
 brew install mysql
 ```
 
-装完后，通过下面这条命令来启动`mysql`
+装完后，通过下面这条命令来`启动mysql`
 
 ```bash
 brew services start mysql
@@ -99,7 +99,7 @@ brew services start mysql
 >Tips: mysql默认的账号是`root`，密码是`空`。
 
 
-## 跑起一个`laravel`项目来
+## 跑起一个laravel项目来
 
 先使用composer安装 `laravel安装器`
 
@@ -115,7 +115,7 @@ export PATH=$(brew --prefix homebrew/php/php71)/bin:$HOME/.composer/vendor/bin:$
 
 改完后，记得要重启一下终端。
 
-建一个专门放`php`项目的目录
+建一个专门放`php项目`的目录
 
 ```bash
 mkdir -p  ~/Developer/PHP
