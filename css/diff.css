@@ -10,9 +10,9 @@ code.highlighter-rouge {
 }
 
 table {
+	width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    display: block;
     overflow: auto;
     word-break: normal;
     word-break: keep-all;
@@ -23,7 +23,7 @@ table thead tr {
 }
 
 table th {
-    padding: 6px 13px;
+    padding: 20px;
     border: 1px solid #ddd;
 }
 
