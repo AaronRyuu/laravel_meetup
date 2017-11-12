@@ -57,7 +57,7 @@ Route::put('issues/{issue}', 'IssuesController@update')->name('issues.update');
 ```
 
 因为这里使用了`put`动词，而`form`表单并不能发起`put`、`patch`和`delete`请求。
-`larave`的解决方式是，添加 `{{ method_field('PUT') }}`，来伪造一个`put`请求。
+`laravel`的解决方式是，添加 `{{ method_field('PUT') }}`，来伪造一个`put`请求。
 
 最终得到的页面
 

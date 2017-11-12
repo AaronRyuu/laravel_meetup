@@ -54,7 +54,7 @@ brew install wget
 brew install php71
 ```
 
-php装好后，要添加到`oh my zsh`的环境变量中，这样我们才能在命令行中打`php`这个命令。
+php装好后，要添加到`oh my zsh`的环境变量中，这样我们才能在命令行中运行`php`这个命令。
 
 ```bash
 export PATH=$(brew --prefix homebrew/php/php71)/bin::$PATH
