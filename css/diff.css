@@ -23,11 +23,6 @@ table thead tr {
 }
 
 table th {
-    padding: 20px;
-    border: 1px solid #ddd;
-}
-
-table th {
     font-weight: 700;
 }
 
@@ -37,7 +32,7 @@ table tr {
 }
 
 table td, table th {
-    padding: 6px 13px;
+    padding: 20px;
     border: 1px solid #ddd;
 }
 		
