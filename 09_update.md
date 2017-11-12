@@ -72,10 +72,8 @@ Route::put('issues/{issue}', 'IssuesController@update')->name('issues.update');
         </div>
 
         <form class="am-form" action="{{route('issues.update', $issue->id)}}" method="post">
-            {% raw %}
-			{{ csrf_field() }}
-            {{ method_field('PUT') }}
-			{% endraw %}
+            {% raw %}{{ csrf_field() }}
+            {{ method_field('PUT') }}{% endraw %}
             
             <fieldset>
                 <div class="am-form-group">
