@@ -29,13 +29,11 @@ body {
 
 #header h1 {
   font-size: 3em;
-  display: inline;
   color: #fff;
   font-weight: normal;
 }
 
 #header h2 {
-  display: inline;
   margin-left: 0.5em;
   font-size: 1.4em;
   font-weight: normal;
