@@ -103,7 +103,7 @@ public function update(Request $request, $id)
 }
 ```
 
-提交一下试试，活动已经可以修改了。不错不错，`CURD`的所有功能都已经完美的实现了。
+提交一下试试，活动已经可以修改了。不错不错，`CURD`的所有功能都已经完美实现。
 
 {% endraw % }
 
