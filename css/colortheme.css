@@ -57,7 +57,7 @@
 .si { background-color: #eeeeee } /* Literal.String.Interpol */
 .sx { color: #DD2200; background-color: #fff0f0 } /* Literal.String.Other */
 .sr { color: #000000; background-color: #fff0ff } /* Literal.String.Regex */
-/*.s1 { background-color: #fff0f0 } /* Literal.String.Single */*/
+.s1 { background-color: #fff0f0 } /* Literal.String.Single */
 .ss { color: #AA6600 } /* Literal.String.Symbol */
 .bp { color: #007020 } /* Name.Builtin.Pseudo */
 .fm { color: #0066BB; font-weight: bold } /* Name.Function.Magic */
