@@ -13,14 +13,14 @@ pre code {
   margin-bottom: 20px;
   border: 1px solid #888;
   font-size: 13px;
-  background: #232323;
-  color: white;
+/*  background: #232323;*/
+/*  color: white;*/
 }
 code {
   font-size: 14px;
   padding: 3px 5px;
-  background: #eee;
-  color: teal;
+/*  background: #eee;*/
+/*  color: teal;*/
 }
 
 .highlight pre code.language-diff {
