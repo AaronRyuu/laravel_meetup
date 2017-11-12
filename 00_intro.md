@@ -10,12 +10,12 @@ hi，我是`东哥`。本套课程叫做`《超简单的laravel新手入门教�
 `The PHP Framework For Web Artisans`，laravel 是适合艺术家来使用的`web`框架，一切东西都要尽可能的完美。laravel 特别适合我这种代码洁癖的人使用。
 
 
-laravel 是目前世界上最为流行的`php`开发框架。
+laravel 是目前世界上`最流行`的 php开发框架。
 
 在`google trends`上，我对比了laravel thinkphp 和yii framework，laravel 以`绝对的优势`遥遥领先。
 
 ![](media/15101145486746.jpg)
-接着我又去 github 上看了一下这三款框架他们 stars 的数量。
+接着我又去 `github` 上看了一下这三款框架他们 stars 的数量。
 
 ![](media/15101157877317.jpg)
 
