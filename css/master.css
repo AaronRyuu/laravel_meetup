@@ -136,8 +136,9 @@ div.related {
 
 .content img {
   display: block;
-/*  margin: 25px auto;*/
+  margin: 10px auto;
 /*  max-width: 620px;*/
+  max-width: 100%;
   border: 0;
 }
 
