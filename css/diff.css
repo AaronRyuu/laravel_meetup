@@ -1,5 +1,10 @@
 /* code */
 
+blockquote {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
 code.highlighter-rouge {
     border: 1px solid #ddd;
     background: #f6f6f6;
