@@ -69,7 +69,7 @@ class WelcomeController extends Controller
 3. 找到和`index`页面不同的中间部分。用`@yield('content')`代码替代。这样一个布局模板就已经定义完了。
 4. 再来到`about.blade.php`中，删除所有共同的部分，只保留不同的地方。加上这些代码包裹起来。
 
-```php
+```html
 @extends('layouts.app')
 @section('content')
     <div class="detail">
