@@ -37,7 +37,7 @@ laravel 是目前世界上`最流行`的 php开发框架。
 
 网络上有不少 laravel 的教程都比较过时了，教的依然还是过去`传统php开发`的那一套搞法，并不是纯正的`laravel way`。
 
-课程的主线内容，参考了peter的`rails十日谈`，我当年就是看了这一篇教程才入门了 rails 开发的。这一次`超简单的 laravel 新手入门教程`，可以算是 rails十日谈 的php版本。
+课程的主线内容，参考了peter的`rails十日谈`，我当时就是看了这一篇教程才入门了 rails 的开发。这一次`超简单的 laravel 新手入门教程`，可以算是 rails十日谈 的 laravel版本。
 
 ## 课程适合观众
 

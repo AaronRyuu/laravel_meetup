@@ -11,7 +11,7 @@ mac中有太多开发相关的程序，都依赖于`xcode`。所以无论你做�
 
 ## oh my zsh
 
-http://ohmyz.sh/
+[http://ohmyz.sh](http://ohmyz.sh)
 
 ![](media/15104946745739.jpg)
 
@@ -29,7 +29,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ![](media/15104947331623.jpg)
 
 
-https://brew.sh/
+[https://brew.sh](https://brew.sh)
 
 如果你用过`linux`系统。那么在`ubuntu`上安装程序，经常会使用一个叫做`apt`的命令。在`centos`上，也有一个类似的`yum`命令。
 如果你喜欢这个功能，那么就一定要来试试`homebrew`了。
@@ -68,6 +68,8 @@ which php
 ```
 
 ## 安装composer
+
+![](media/15106446728850.jpg)
 
 `composer`是 php 的包管理器，也是类似`homebrew`的功能，不同的是 composer 是专门用来安装 php 包的。在开发 php 程序时，想安装什么，都是一条`composer require`，就可以自动下载好你想要的包了。
 

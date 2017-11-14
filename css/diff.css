@@ -9,6 +9,12 @@ code.highlighter-rouge {
 	color: #c7254e;
 }
 
+blockquote {
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
+}
+
 table {
 	width: 100%;
     border-collapse: collapse;
@@ -53,10 +59,13 @@ pre code {
 /*  color: white;*/
 }
 code {
-  font-size: 14px;
-  padding: 3px 5px;
-/*  background: #eee;*/
-/*  color: teal;*/
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
 }
 
 .highlight pre code.language-diff {
