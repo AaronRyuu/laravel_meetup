@@ -3,7 +3,7 @@ layout: default
 title: 开发环境Mac篇
 ---
 
-使用 mac 做开发，有一些 app 几乎做任何程序开发都是`必备品`。
+使用 mac 做开发，有一些 app 几乎做任何程序开发都`必备`的。
 
 ## xcode
 mac中有太多开发相关的程序，都依赖于`xcode`。所以无论你做不做`ios`开发，基本都是必须安装的。安装也非常简单，直接在`app store`中下载就好了。需要注意的是，当安装完成之后，一定记得要启动一次，并点击同意按钮。
@@ -31,7 +31,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 [https://brew.sh](https://brew.sh)
 
-如果你用过`linux`系统。那么在`ubuntu`上安装程序，经常会使用一个叫做`apt`的命令。在`centos`上，也有一个类似的`yum`命令。
+假如你之前用过`linux`系统。那么在`ubuntu`上安装程序，经常会使用一个叫做`apt`的命令。在`centos`上，也有一个类似的`yum`命令。
 如果你喜欢这个功能，那么就一定要来试试`homebrew`了。
 
 同样一条命令搞定它。
@@ -48,7 +48,7 @@ brew install wget
 
 ## php
 
-有了上面这些工具后，再来安装一下`php`。现在我们使用的`laravel 5.5`版本，最低要求的php版本都是`7`以上，所有我们直接来安装最新的`php 7.1`好了。
+有了上面这些工具后，再来安装一下`php`。现在我们使用的`laravel 5.5`版本，最低要求的php版本都是`7`以上，所以我们直接来安装最新的`php 7.1`好了。
 
 ```bash
 brew install php71
