@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Laravel Meetup</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" href="assets/vendor/amazeui/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="assets/css/common.css">
+</head>
+
+<body>
+<header class="am-topbar am-topbar-fixed-top">
+    <div class="am-container">
+        <h1 class="am-topbar-brand">
+            <a href="index.html">Meetup</a>
+        </h1>
+
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
+                data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
+                class="am-icon-bars"></span></button>
+
+        <div class="am-collapse am-topbar-collapse" id="collapse-head">
+            <ul class="am-nav am-nav-pills am-topbar-nav">
+                <li><a href="issues_index.html">活动</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+
+            <div class="am-topbar-right">
+                <a href="login.html" class="am-btn am-btn-secondary am-topbar-btn am-btn-sm">
+                    <span class="am-icon-user"></span> Login
+                </a>
+            </div>
+
+            <div class="am-topbar-right">
+                <a href="sign_up.html" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">
+                    <span class="am-icon-pencil"></span> Sign Up
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="detail">
+    <div class="am-g am-container">
+        <div class="am-u-lg-12">
+            <h1 class="detail-h1">Sign Up</h1>
+        </div>
+    </div>
+</div>
+
+
+<div class="am-g">
+    <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+
+        <form method="post" class="am-form">
+            <div class="am-form-group am-form-icon am-form-feedback">
+                <label class="am-form-label" for="email">用户名: </label>
+                <input type="text" id="name" name="email" class="am-form-field" placeholder="输入你的用户名" name="name">
+            </div>
+
+            <div class="am-form-group am-form-icon am-form-feedback">
+                <label class="am-form-label" for="email">邮箱: </label>
+                <input type="text" id="email" name="email" class="am-form-field" placeholder="输入你的邮箱">
+            </div>
+
+            <div class="am-form-group am-form-icon am-form-feedback">
+                <label class="am-form-label" for="password">密码: </label>
+                <input type="password" name="password" id="password" class="am-form-field" placeholder="输入你的密码">
+            </div>
+
+            <div class="am-form-group am-form-icon am-form-feedback">
+                <label class="am-form-label" for="password_confirmation">重复密码: </label>
+                <input type="password" name="password_confirmation" id="password_confirmation" class="am-form-field"
+                       placeholder="请重新输入你的密码">
+            </div>
+
+            <hr>
+            <div class="am-cf">
+                <input type="submit" value="Login" class="am-btn am-btn-primary am-btn-sm am-fl">
+                <a href="password_reset.html" class="am-btn am-btn-default am-btn-sm am-fr">Forget Password ^_^?</a>
+            </div>
+        </form>
+        <br>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="am-padding-left">Copyright © 2017. Made With <i class="am-icon am-icon-heart"></i> By Aaron. All Rights
+        Reserved.</p>
+</footer>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/vendor/amazeui/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/vendor/amazeui/js/amazeui.min.js"></script>
+<script src="assets/js/common.js"></script>
+</body>
+</html>
