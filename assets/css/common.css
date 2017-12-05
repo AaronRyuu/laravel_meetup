@@ -212,8 +212,8 @@ a:hover {
 .pagination > .active > span:focus {
     z-index: 2;
     color: #fff;
-    background-color: #0e90d2;
-    border-color: #0e90d2;
+    background-color: #7EB6AD;
+    border-color: #7EB6AD;
     cursor: default;
 }
 
