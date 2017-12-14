@@ -1,6 +1,10 @@
 # 超简单的laravel新手入门教程
 
-项目完成后的源码
+https://images.itfun.tv/photo/2017/laravel_meetup.png
+
+所有章节完成后的源码
+
+课程地址：https://itfun.tv/class/26
 
 ## Laragon用户注意事项
 
