@@ -1,6 +1,8 @@
 # 超简单的laravel新手入门教程
 
-https://images.itfun.tv/photo/2017/laravel_meetup.png
+
+![](https://images.itfun.tv/photo/2017/laravel_meetup.png)
+
 
 所有章节完成后的源码
 
