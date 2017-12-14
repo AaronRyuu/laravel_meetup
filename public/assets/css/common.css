@@ -1,0 +1,255 @@
+/* Write your styles */
+a {
+    color: #7EB6AD;
+}
+
+a:hover {
+    color: teal;
+}
+
+.am-topbar .am-topbar-right a {
+    color: #fff;
+}
+
+.am-badge-secondary {
+    background-color: teal;
+}
+
+.am-btn-secondary {
+    background-color: #7EB6AD;
+    border-color: #7EB6AD;
+}
+
+.am-btn-secondary:focus, .am-btn-secondary:hover {
+    background-color: teal;
+}
+
+.am-btn-secondary.am-active, .am-btn-secondary:active, .am-btn-secondary:focus, .am-btn-secondary:hover, .am-dropdown.am-active .am-btn-secondary.am-dropdown-toggle {
+    border-color: teal;
+}
+
+.am-pagination > .am-active > a, .am-pagination > .am-active > a:focus, .am-pagination > .am-active > a:hover, .am-pagination > .am-active > span, .am-pagination > .am-active > span:focus, .am-pagination > .am-active > span:hover {
+    border-color: teal;
+    background-color: teal;
+}
+
+.page-404 {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h1 {
+    font-size: 200%;
+    color: #333;
+    margin-top: 30px;
+}
+
+.get {
+    background: url("../img/bg.jpg") no-repeat right center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.get-title {
+    font-size: 200%;
+    border: 2px solid #fff;
+    padding: 20px;
+    display: inline-block;
+}
+
+.get-btn {
+    background: #fff;
+}
+
+.detail {
+    border-bottom: 1px solid #ddd;
+    margin-top: 0;
+    margin-bottom: 35px;
+    background: #7EB6AD;
+    color: #fff;
+}
+
+.detail-h1 {
+    text-align: center;
+    font-size: 200%;
+    margin: 40px 0;
+}
+
+.detail-h2 {
+    text-align: center;
+    font-size: 150%;
+    margin: 40px 0;
+}
+
+.issue-comment-count a {
+    font-size: 45px;
+}
+
+.meta-data {
+    color: #999;
+    font-size: 12px;
+}
+
+.footer p {
+    color: #7f8c8d;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    background: #2d3e50;
+}
+
+.am-icon-comments {
+    font-size: 25px;
+    position: relative;
+    top: -20px;
+    color: #c9c9c9;
+}
+
+.am-icon-heart {
+    color: #dd514c;
+}
+
+#nprogress .nprogress-bar {
+    background: #dd514c;
+}
+
+#nprogress .nprogress-spinner-icon {
+    border-top-color: #dd514c;
+    border-left-color: #dd514c;
+}
+
+#nprogress .nprogress-peg {
+    -webkit-box-shadow: 0 0 10px #dd514c, 0 0 5px #dd514c;
+    box-shadow: 0 0 10px #dd514c, 0 0 5px #dd514c;
+}
+
+.issue-heading {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-top: 0;
+    margin-bottom: 35px;
+    background: #7EB6AD;
+    color: #fff;
+    font-size: 2em;
+}
+
+.issue-heading a {
+    margin-right: 30px;
+}
+
+.notice {
+    position: absolute;
+    z-index: 9999;
+    bottom: 60px;
+    right: 20px;
+    background: teal;
+    color: white;
+    padding: 20px;
+    -webkit-box-shadow: 6px 7px 9px -1px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 6px 7px 9px -1px rgba(0, 0, 0, 0.68);
+    box-shadow: 6px 7px 9px -1px rgba(0, 0, 0, 0.68);
+}
+
+/* ==========================================================================
+   Component: Pagination
+ ============================================================================ */
+.pagination {
+    margin: 1.5rem 0;
+    list-style: none;
+    color: #999999;
+    text-align: center;
+    padding: 24px 0;
+}
+
+.pagination:before,
+.pagination:after {
+    content: " ";
+    display: table;
+}
+
+.pagination:after {
+    clear: both;
+}
+
+.pagination > li {
+    display: inline-block;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    position: relative;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    line-height: 1.2;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    margin-right: 0;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    background-color: #eeeeee;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #7EB6AD;
+    border-color: #7EB6AD;
+    cursor: default;
+}
+
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+    color: #999999;
+    background-color: #fff;
+    border-color: #ddd;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.pagination .pagination-prev {
+    float: left;
+}
+
+.pagination .pagination-prev a {
+    border-radius: 0;
+}
+
+.pagination .pagination-next {
+    float: right;
+}
+
+.pagination .pagination-next a {
+    border-radius: 0;
+}
+
+.pagination-centered {
+    text-align: center;
+}
+
+.pagination-right {
+    text-align: right;
+}
